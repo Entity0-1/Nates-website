@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nathan Benincase — software engineer building real-time simulations, data pipelines, Python applications, and web interfaces, with experience in automated testing, debugging, and software delivery."
+    />
+    <meta name="theme-color" content="#080404" />
+    <title>Nathan Benincase — Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="wordmark" href="#top" aria-label="Nate, back to top">
+        <span class="wordmark-mark">N</span>
+        <span>NATHAN BENINCASE<span class="accent">.</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav id="primary-navigation" class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span></span> Software engineer · Open to opportunities</p>
+          <h1>I build software.<br /><em>From design to delivery.</em></h1>
+          <p class="hero-intro">
+            I design, implement, test, and ship software—from a connectome-driven 3D game
+            and reproducible data pipelines to Python applications and responsive web
+            interfaces. My work combines hands-on development with repository-scale review.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <aside class="signal-card" data-reveal aria-label="Current engineering focus">
+          <div class="signal-topline">
+            <span>01 / PROFILE</span>
+            <span class="status"><i></i> AVAILABLE</span>
+          </div>
+          <div class="signal-orbit" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <span class="orbit orbit-three"></span>
+            <span class="orbit-core">N</span>
+          </div>
+          <div class="terminal-lines" aria-hidden="true">
+            <p><span>01</span> design &amp; implement</p>
+            <p><span>02</span> test &amp; debug</p>
+            <p><span>03</span> package &amp; deliver</p>
+            <p><span>04</span> document &amp; improve</p>
+          </div>
+        </aside>
+
+        <div class="hero-metrics" data-reveal>
+          <div><strong>Build</strong><span>Architecture &amp; implementation</span></div>
+          <div><strong>Verify</strong><span>Tests &amp; code review</span></div>
+          <div><strong>Deliver</strong><span>Packaging &amp; documentation</span></div>
+        </div>
+
+        <a class="scroll-cue" href="#experience" aria-label="Scroll to experience">
+          <span>Scroll</span><i></i>
+        </a>
+      </section>
+
+      <section id="experience" class="content-section section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="section-number">01</p>
+          <div>
+            <p class="eyebrow">Experience</p>
+            <h2>Software development.<br />Engineering ownership.</h2>
+          </div>
+        </div>
+
+        <article class="experience-card" data-reveal>
+          <div class="experience-meta">
+            <p class="role-kicker">CURRENT ROLE</p>
+            <h3>Software Engineer — AI Evaluation (Contract)</h3>
+            <p>DataAnnotation Tech</p>
+            <span>Remote · 1+ year</span>
+          </div>
+          <div class="experience-details">
+            <p>
+              Perform repository-level engineering reviews of AI-generated software changes.
+              Analyze requirements, inspect implementations, write and assess tests, and diagnose
+              defects to evaluate correctness, code quality, and functional behavior.
+            </p>
+            <ul>
+              <li><strong>Code review:</strong> assess implementations in Python, Rust, JavaScript, and C++ against task requirements and surrounding code.</li>
+              <li><strong>Testing &amp; validation:</strong> write and assess tests, reproduce defects, and investigate edge cases and incomplete fixes.</li>
+              <li><strong>Root-cause analysis:</strong> trace execution paths and interactions between components to explain failures at the source.</li>
+              <li><strong>Functional verification:</strong> exercise applications and games to identify state-management defects, rendering issues, and usability problems.</li>
+              <li><strong>Technical communication:</strong> document reproducible findings, compare implementation tradeoffs, and support conclusions with test results and code-level evidence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-card" data-reveal>
+          <div class="experience-meta">
+            <p class="role-kicker">INDEPENDENT PROJECTS</p>
+            <h3>Software Engineering</h3>
+            <p>Python applications &amp; web development</p>
+            <span>Architecture · Implementation · Delivery</span>
+          </div>
+          <div class="experience-details">
+            <p>
+              Build and deliver Python applications and web interfaces, owning the work from
+              requirements and architecture through implementation, testing, packaging, and
+              documentation. Public projects include a document retrieval application, an
+              iPhone backup extraction utility, and this portfolio.
+            </p>
+            <ul>
+              <li><strong>Real-time systems:</strong> built Escape Circuit, a complete 3D game that connects live sensory inputs, connectome-derived controllers, fly biomechanics, collision, telemetry, audio, and replay.</li>
+              <li><strong>Application delivery:</strong> developed and packaged RAG Pipeline’s retrieval engine with support for four document formats, ranked results with source citations, and command-line and browser interfaces.</li>
+              <li><strong>Architecture &amp; implementation:</strong> built modular ingestion, chunking, indexing, ranking, and persistence components, with shared application logic behind both interfaces.</li>
+              <li><strong>Reliability:</strong> implemented validation for uploaded documents and saved indexes, atomic file replacement, and clear error handling to protect existing data when input is invalid.</li>
+              <li><strong>Testing &amp; CI:</strong> added unit and integration tests for search, storage, uploads, and CLI behavior; configured a Windows/Linux test matrix for Python 3.11 and 3.14 on pushes and pull requests.</li>
+              <li><strong>Packaging &amp; documentation:</strong> delivered an installable Python package, bundled browser assets, setup instructions, sample documents, and a technical walkthrough of the retrieval algorithms.</li>
+              <li><strong>Workflow automation:</strong> developed a SQLite-backed backup extractor that automates file lookup and export across hashed and older flat iPhone backup layouts.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section id="work" class="content-section section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="section-number">02</p>
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Selected engineering work.</h2>
+            <p class="section-intro">Applications, AI projects, and engineering contributions, with a focus on what I implemented and how the software works.</p>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="project-card project-featured flybrain-card" data-reveal>
+            <div class="flybrain-showcase">
+              <figure class="gameplay-video">
+                <video controls playsinline preload="metadata" poster="assets/fly-brain-poster.jpg" aria-label="Escape Circuit gameplay demonstration">
+                  <source src="assets/fly-brain-gameplay.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                  <a href="assets/fly-brain-gameplay.mp4">Download the gameplay video</a>.
+                </video>
+                <figcaption>
+                  <span>Gameplay capture</span>
+                  <span>Live circuit telemetry · first-person interaction · 3D pursuit</span>
+                </figcaption>
+              </figure>
+
+              <div class="flybrain-facts" aria-label="Escape Circuit technical scale">
+                <div><strong>1.1 GB</strong><span>version-locked connectome source data</span></div>
+                <div><strong>39,549</strong><span>observed contacts in the escape artifact</span></div>
+                <div><strong>≈3M</strong><span>triangles in the furnished environment</span></div>
+              </div>
+            </div>
+
+            <div class="project-copy flybrain-copy">
+              <p class="project-kind">FLAGSHIP PROJECT · GAME &amp; SIMULATION ENGINEERING</p>
+              <h3>Escape Circuit <span class="title-alias">/ Fly Brain</span></h3>
+              <p class="project-lede">
+                Built a fully 3D first-person game in which compact controllers derived from
+                measured fruit-fly connectivity influence escape actions and spontaneous turns.
+                The project brings together real-time gameplay, neural-data processing, simulation
+                architecture, testing, scientific documentation, and release engineering.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Complete gameplay system:</strong> implemented first-person movement, mouse tracking, charge-and-release swatter mechanics, timed rounds, scoring, pause/restart states, audio, telemetry, and a twelve-second split-screen replay.</li>
+                <li><strong>Connectome data pipeline:</strong> built a reproducible Python workflow that verifies checksums, scans MaleCNS v1.0 source data, and generates compact, reviewable escape and flight-turn artifacts.</li>
+                <li><strong>Real-time controller architecture:</strong> designed in-process neural providers plus an optional non-blocking Python reference service, keeping gameplay responsive even when external computation is unavailable or late.</li>
+                <li><strong>Simulation engineering:</strong> translated modeled visual looming into distinct takeoff, directional escape, airborne-saccade, steering, power, and landing signals that drive the fly’s 3D state machine.</li>
+                <li><strong>World &amp; collision systems:</strong> adapted a detailed apartment into a navigable game space with shared furniture footprints, room-to-room waypoints, structural collision, movement substeps, and swept checks for fast-moving objects.</li>
+                <li><strong>Quality &amp; delivery:</strong> added deterministic Godot and Python tests, linting, type checks, data provenance, third-party attribution, and automated Windows and Web release packaging.</li>
+              </ul>
+              <p class="project-scope"><strong>Engineering result:</strong> a self-contained game that runs without a server, account, or internet connection, while retaining an independently implemented Python path for verification and inspection.</p>
+              <p class="science-boundary">Measured connectivity informs selected controllers; stimulus encoding, neural dynamics, action decoding, and biomechanics are explicitly documented engineering models—not a whole-brain simulation.</p>
+              <div class="tag-list"><span>Godot 4</span><span>GDScript</span><span>Python</span><span>Real-time simulation</span><span>Data engineering</span><span>Testing</span></div>
+            </div>
+          </article>
+
+          <article class="project-card project-featured" data-reveal>
+            <div class="retrieval-overview">
+              <p class="project-label"><span>02</span> LOCAL DOCUMENT SEARCH</p>
+              <h3>From files<br />to source evidence.</h3>
+              <ol class="pipeline-steps" aria-label="Grounded Search retrieval pipeline">
+                <li><span>01</span><div><strong>Load &amp; chunk</strong><p>PDF, DOCX, Markdown, and text</p></div></li>
+                <li><span>02</span><div><strong>Index &amp; rank</strong><p>TF-IDF + BM25 scoring</p></div></li>
+                <li><span>03</span><div><strong>Return the evidence</strong><p>Original excerpts with source citations</p></div></li>
+              </ol>
+              <p class="architecture-note">Local processing · Inspectable ranking</p>
+              <div class="engineering-note">
+                <h4>Engineering decision</h4>
+                <p>Used deterministic lexical ranking to keep search local, explainable, and testable. The CLI and browser share one retrieval pipeline, so fixes and improvements apply to both interfaces.</p>
+              </div>
+            </div>
+            <div class="project-copy">
+              <p class="project-kind">PYTHON APPLICATION · INFORMATION RETRIEVAL</p>
+              <h3>RAG Pipeline</h3>
+              <p>
+                Built Grounded Search, the retrieval engine for my RAG Pipeline, to make
+                local document collections searchable. Implemented the full path from PDF,
+                DOCX, Markdown, and text ingestion to ranked passages with source citations.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Search implementation:</strong> built overlapping chunks, an inverted index, and configurable TF-IDF / BM25 scoring with reproducible ranking.</li>
+                <li><strong>Feature delivery:</strong> implemented document uploads, index building and inspection, and search through a CLI and local HTTP interface.</li>
+                <li><strong>Data integrity:</strong> added schema validation and atomic index replacement; validated uploads before replacing files and rejected unsafe filenames.</li>
+                <li><strong>Automated verification:</strong> wrote tests for upload-to-search flows, overwrite handling, corrupt indexes, and CLI errors, with GitHub Actions configured for Windows/Linux and Python 3.11/3.14.</li>
+                <li><strong>Developer handoff:</strong> packaged the application with its web assets and documented installation, usage, ranking algorithms, and example workflows.</li>
+              </ul>
+              <p class="project-scope"><strong>Result:</strong> a local application that lets users upload documents, build a searchable index, and inspect original evidence through either interface.</p>
+              <div class="tag-list"><span>Python</span><span>TF-IDF / BM25</span><span>Automated testing</span><span>GitHub Actions</span></div>
+              <div class="project-links">
+                <a class="text-link" href="https://github.com/Entity0-1/RAG-Pipeline" target="_blank" rel="noreferrer">View RAG Pipeline <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/Entity0-1/RAG-Pipeline/blob/main/docs/HOW_IT_WORKS.md" target="_blank" rel="noreferrer">Technical walkthrough <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/Entity0-1/RAG-Pipeline/tree/main/tests" target="_blank" rel="noreferrer">Test suite <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-copy">
+              <div class="project-label"><span>03</span> PYTHON TOOLING · DATA EXTRACTION</div>
+              <h3>iPhone Backup Extractor</h3>
+              <p>
+                Developed a Python utility that reads an iPhone backup’s SQLite manifest,
+                resolves its internal file mapping, and exports Voice Memo recordings and
+                the Notes database into organized folders.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Data access:</strong> queried the SQLite manifest to map original paths to the opaque identifiers used to store backup files.</li>
+                <li><strong>Compatibility:</strong> resolved files in hashed subfolders and added a fallback for older flat backup layouts.</li>
+                <li><strong>Export workflow:</strong> organized recordings and Notes database files into separate folders while preserving file metadata.</li>
+                <li><strong>Error handling:</strong> checked for a missing manifest, skipped unavailable files, and reported extracted files and the final export count.</li>
+              </ul>
+              <p class="project-scope"><strong>Result:</strong> automated manifest lookup and file export, turning opaque backup storage into organized audio and database files. Delivered with configuration and usage instructions using Python’s standard library.</p>
+              <div class="tag-list"><span>Python</span><span>SQLite</span><span>File automation</span></div>
+              <a class="text-link" href="https://github.com/Entity0-1/BackupInfoExtractor" target="_blank" rel="noreferrer">View Backup Extractor <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-copy">
+              <div class="project-label"><span>04</span> FRONTEND ENGINEERING</div>
+              <h3>This Portfolio</h3>
+              <p>
+                Designed and developed this responsive website with HTML, CSS, and
+                JavaScript, implementing the layout system, navigation, animation,
+                and project presentation as a lightweight static application.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Frontend architecture:</strong> separated semantic HTML, a reusable CSS visual system, and JavaScript interactions into a self-contained static site.</li>
+                <li><strong>Responsive behavior:</strong> implemented CSS Grid layouts, mobile navigation, and section-aware navigation highlighting.</li>
+                <li><strong>Animation performance:</strong> bounded the canvas particle count and display scaling, and used IntersectionObserver for scroll reveals.</li>
+                <li><strong>Accessibility:</strong> supported reduced motion, visible keyboard focus, skip navigation, labeled controls, and Escape-key menu dismissal.</li>
+              </ul>
+              <p class="project-scope"><strong>Delivered:</strong> a responsive portfolio with project case studies and contact links, served as static HTML, CSS, and JavaScript without a build step or UI framework.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span></div>
+              <a class="text-link" href="#contact">Discuss the build <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-visual diagnostic-visual" aria-hidden="true">
+              <div class="code-window">
+                <div class="window-bar"><i></i><i></i><i></i><span>failure_trace.py</span></div>
+                <pre><span class="red">def</span> inspect_repository(target):
+  graph = map_dependencies(target)
+  failure = reproduce_issue(graph)
+  <span class="muted"># evidence over assumption</span>
+  <span class="red">return</span> isolate_root_cause(failure)</pre>
+                <div class="scan-line"></div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-label"><span>05</span> PROFESSIONAL WORK · CODE REVIEW</div>
+              <h3>Agentic Code Evaluation</h3>
+              <p>
+                Review AI-generated repository changes from the task requirements through
+                to observed behavior. I investigate the surrounding code, reproduce failures,
+                and assess whether the implementation and its tests support the claimed fix.
+              </p>
+              <ul class="project-highlights">
+                <li>Trace failures across components to identify their root cause.</li>
+                <li>Compare proposed implementations and explain differences in correctness and quality.</li>
+                <li>Support evaluations with concrete test results and code-level evidence.</li>
+              </ul>
+              <div class="tag-list"><span>Code review</span><span>Testing</span><span>Root-cause analysis</span></div>
+              <p class="confidential-note">Professional work · Details generalized</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-visual product-visual" aria-hidden="true">
+              <div class="mini-app">
+                <div class="mini-sidebar"><i></i><i></i><i></i><i></i></div>
+                <div class="mini-content">
+                  <span class="mini-heading"></span>
+                  <div class="mini-chart"><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="mini-row"><span></span><span></span></div>
+                </div>
+                <div class="target-ring"></div>
+              </div>
+            </div>
+            <div class="project-copy">
+              <div class="project-label"><span>06</span> PROFESSIONAL WORK · PRODUCT QUALITY</div>
+              <h3>Interactive App Analysis</h3>
+              <p>
+                Evaluate applications and games as interactive systems, checking how
+                interface behavior, state, and rendering line up with the requested experience.
+              </p>
+              <ul class="project-highlights">
+                <li>Exercise user interactions to find broken state and inconsistent behavior.</li>
+                <li>Identify rendering defects and unclear interactions that affect usability.</li>
+                <li>Describe gaps between expected and observed behavior in structured defect reports.</li>
+              </ul>
+              <div class="tag-list"><span>UI analysis</span><span>Playwright</span><span>Defect reporting</span></div>
+              <p class="confidential-note">Professional work · Details generalized</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="skills" class="content-section section-shell">
+        <div class="section-heading" data-reveal>
+          <p class="section-number">03</p>
+          <div>
+            <p class="eyebrow">Capabilities</p>
+            <h2>From architecture<br />to working software.</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article data-reveal>
+            <span class="skill-index">A</span>
+            <h3>Languages</h3>
+            <ul><li>Python</li><li>GDScript</li><li>JavaScript / TypeScript</li><li>Rust</li><li>C++</li><li>SQL / SQLite</li><li>HTML &amp; CSS</li></ul>
+          </article>
+          <article data-reveal>
+            <span class="skill-index">B</span>
+            <h3>Engineering</h3>
+            <ul><li>Application architecture</li><li>Real-time systems &amp; simulation</li><li>Automated testing &amp; CI</li><li>Debugging &amp; code review</li><li>Data pipelines &amp; retrieval</li><li>Packaging &amp; technical documentation</li></ul>
+          </article>
+          <article data-reveal>
+            <span class="skill-index">C</span>
+            <h3>Tools</h3>
+            <ul><li>Godot 4</li><li>Git &amp; GitHub Actions</li><li>Docker</li><li>Playwright</li><li>pytest &amp; Python unittest</li><li>Python packaging &amp; CLI tooling</li></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="content-section about-section section-shell">
+        <div class="about-code" data-reveal aria-hidden="true">
+          <span>04 / ABOUT</span>
+          <div class="monogram">N</div>
+          <p>Curiosity<br />→ clarity<br />→ reliable code</p>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">Beyond the résumé</p>
+          <h2>I take ownership<br />of the implementation.</h2>
+          <p>
+            I’m a software engineer focused on building useful applications and understanding
+            the systems behind them. My project work spans real-time simulation, scientific data
+            processing, document retrieval, automation, and frontend development.
+          </p>
+          <p>
+            I work through the full development process: breaking down requirements, implementing
+            features, debugging failures, writing tests, and delivering code with usable interfaces
+            and documentation. At DataAnnotation Tech, I apply that engineering judgment to reviewing
+            changes in unfamiliar repositories and explaining their strengths and defects.
+          </p>
+          <p>
+            Outside of code, I’m interested in AI systems, game design, open source, language
+            learning, and the way technology changes how people interact with the world.
+          </p>
+          <div class="interest-list" aria-label="Interests">
+            <span>AI systems</span><span>Game design</span><span>Open source</span><span>Languages</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-shell" data-reveal>
+        <p class="eyebrow">Have a role, project, or difficult problem?</p>
+        <h2>Let’s build<br /><em>dependable software.</em></h2>
+        <p class="contact-intro">
+          I’m open to software engineering roles where I can contribute to feature development,
+          testing, debugging, and the delivery of useful software.
+        </p>
+       
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:nathantbenincase@gmail.com">Email me <span>↗</span></a>
+          <a class="button button-quiet placeholder-link" href="https://github.com/Entity0-1" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-quiet placeholder-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark" href="#top"><span class="wordmark-mark">N</span><span>NATE<span class="accent">.</span></span></a>
+      <p>Designed &amp; built with intention.</p>
+      <p>© <span data-year></span> Nathan Benincase</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>
+      Connect the link
+    </div>
+  </body>
+</html>
