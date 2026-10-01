@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Nathan Benincase — software engineer building real-time simulations, data pipelines, Python applications, and web interfaces, with experience in automated testing, debugging, and software delivery."
+      content="Nathan Benincase — software engineer building browser products, real-time simulations, data pipelines, Python applications, and web interfaces, with experience in automated testing, debugging, and software delivery."
     />
     <meta name="theme-color" content="#080404" />
     <title>Nathan Benincase — Software Engineer</title>
@@ -51,9 +51,9 @@
           <p class="eyebrow"><span></span> Software engineer · Open to opportunities</p>
           <h1>I build software.<br /><em>From design to delivery.</em></h1>
           <p class="hero-intro">
-            I design, implement, test, and ship software—from a connectome-driven 3D game
-            and reproducible data pipelines to Python applications and responsive web
-            interfaces. My work combines hands-on development with repository-scale review.
+            I design, implement, test, and ship software—from a published Chrome extension
+            and a connectome-driven 3D game to data pipelines, Python applications, and
+            responsive web interfaces. My work combines hands-on development with repository-scale review.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
@@ -127,17 +127,18 @@
           <div class="experience-meta">
             <p class="role-kicker">INDEPENDENT PROJECTS</p>
             <h3>Software Engineering</h3>
-            <p>Python applications &amp; web development</p>
+            <p>Browser products · Python applications · web development</p>
             <span>Architecture · Implementation · Delivery</span>
           </div>
           <div class="experience-details">
             <p>
-              Build and deliver Python applications and web interfaces, owning the work from
-              requirements and architecture through implementation, testing, packaging, and
-              documentation. Public projects include a document retrieval application, an
-              iPhone backup extraction utility, and this portfolio.
+              Build and deliver browser products, Python applications, and web interfaces, owning
+              the work from requirements and architecture through implementation, testing,
+              packaging, and documentation. Public projects include a published website-diagnostics extension,
+              a document retrieval application, an iPhone backup extraction utility, and this portfolio.
             </p>
             <ul>
+              <li><strong>Product engineering:</strong> built and published SiteMed, a local-first Chrome extension with a diagnostic engine, saved comparisons, whole-site audits, availability monitoring, printable reports, and an automated release workflow.</li>
               <li><strong>Real-time systems:</strong> built Escape Circuit, a complete 3D game that connects live sensory inputs, connectome-derived controllers, fly biomechanics, collision, telemetry, audio, and replay.</li>
               <li><strong>Application delivery:</strong> developed and packaged RAG Pipeline’s retrieval engine with support for four document formats, ranked results with source citations, and command-line and browser interfaces.</li>
               <li><strong>Architecture &amp; implementation:</strong> built modular ingestion, chunking, indexing, ranking, and persistence components, with shared application logic behind both interfaces.</li>
@@ -156,7 +157,7 @@
           <div>
             <p class="eyebrow">Selected work</p>
             <h2>Selected engineering work.</h2>
-            <p class="section-intro">Applications, AI projects, and engineering contributions, with a focus on what I implemented and how the software works.</p>
+            <p class="section-intro">Browser products, applications, AI projects, and engineering contributions, with a focus on what I implemented and how the software works.</p>
           </div>
         </div>
 
@@ -205,9 +206,53 @@
             </div>
           </article>
 
+          <article class="project-card project-featured sitemed-card" data-reveal>
+            <div class="sitemed-showcase">
+              <figure class="sitemed-preview">
+                <img
+                  src="assets/sitemed-scan.png"
+                  alt="SiteMed Chrome extension showing a completed website scan and plain-English findings"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption>
+                  <span>Product interface</span>
+                  <span>Page evidence translated into clear next steps</span>
+                </figcaption>
+              </figure>
+              <ol class="sitemed-flow" aria-label="SiteMed product workflow">
+                <li><span>Scan</span><strong>Observe the page</strong></li>
+                <li><span>Compare</span><strong>Track changes</strong></li>
+                <li><span>Report</span><strong>Share next steps</strong></li>
+              </ol>
+            </div>
+
+            <div class="project-copy sitemed-copy">
+              <p class="project-kind">02 · PUBLISHED PRODUCT · CHROME EXTENSION ENGINEERING</p>
+              <h3>SiteMed</h3>
+              <p class="project-lede">
+                Built and published a Chrome extension that diagnoses website problems and
+                turns technical browser evidence into plain-English explanations and practical
+                next steps for site owners, teams, and clients.
+              </p>
+              <ul class="project-highlights">
+                <li><strong>Diagnostic engine:</strong> implemented bounded checks for broken resources, accessibility gaps, form and download risks, trust signals, search setup, layout defects, and loading performance.</li>
+                <li><strong>Extension architecture:</strong> separated React interfaces, a Manifest V3 service worker, an isolated content script, browser-independent diagnostic rules, and Chrome API adapters behind typed, runtime-validated messages.</li>
+                <li><strong>Website care workspace:</strong> delivered saved scan comparisons, baselines, same-site audits, availability monitoring through Chrome alarms, client branding, printable reports, and JSON export.</li>
+                <li><strong>Privacy and permissions:</strong> kept analysis and workspace data on the device, added no analytics or SiteMed server, and requested expanded site or notification access only when the user starts the related feature.</li>
+                <li><strong>Quality and release:</strong> built unit coverage, a deterministic diagnostic fixture, a real-Chrome smoke flow, formatting, linting, type checks, production builds, and Chrome Web Store packaging.</li>
+              </ul>
+              <p class="project-scope"><strong>Delivered:</strong> a published browser product with an official privacy and support site, a maintainable release process, and clear boundaries around what its evidence can establish.</p>
+              <div class="tag-list"><span>TypeScript</span><span>React</span><span>Chrome MV3</span><span>WXT</span><span>Vitest</span><span>Browser APIs</span></div>
+              <div class="project-links">
+                <a class="text-link" href="https://entity0-1.github.io/SiteMed-Site/" target="_blank" rel="noreferrer">Visit SiteMed <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
           <article class="project-card project-featured" data-reveal>
             <div class="retrieval-overview">
-              <p class="project-label"><span>02</span> LOCAL DOCUMENT SEARCH</p>
+              <p class="project-label"><span>03</span> LOCAL DOCUMENT SEARCH</p>
               <h3>From files<br />to source evidence.</h3>
               <ol class="pipeline-steps" aria-label="Grounded Search retrieval pipeline">
                 <li><span>01</span><div><strong>Load &amp; chunk</strong><p>PDF, DOCX, Markdown, and text</p></div></li>
@@ -247,7 +292,7 @@
 
           <article class="project-card" data-reveal>
             <div class="project-copy">
-              <div class="project-label"><span>03</span> PYTHON TOOLING · DATA EXTRACTION</div>
+              <div class="project-label"><span>04</span> PYTHON TOOLING · DATA EXTRACTION</div>
               <h3>iPhone Backup Extractor</h3>
               <p>
                 Developed a Python utility that reads an iPhone backup’s SQLite manifest,
@@ -268,7 +313,7 @@
 
           <article class="project-card" data-reveal>
             <div class="project-copy">
-              <div class="project-label"><span>04</span> FRONTEND ENGINEERING</div>
+              <div class="project-label"><span>05</span> FRONTEND ENGINEERING</div>
               <h3>This Portfolio</h3>
               <p>
                 Designed and developed this responsive website with HTML, CSS, and
@@ -300,7 +345,7 @@
               </div>
             </div>
             <div class="project-copy">
-              <div class="project-label"><span>05</span> PROFESSIONAL WORK · CODE REVIEW</div>
+              <div class="project-label"><span>06</span> PROFESSIONAL WORK · CODE REVIEW</div>
               <h3>Agentic Code Evaluation</h3>
               <p>
                 Review AI-generated repository changes from the task requirements through
@@ -330,7 +375,7 @@
               </div>
             </div>
             <div class="project-copy">
-              <div class="project-label"><span>06</span> PROFESSIONAL WORK · PRODUCT QUALITY</div>
+              <div class="project-label"><span>07</span> PROFESSIONAL WORK · PRODUCT QUALITY</div>
               <h3>Interactive App Analysis</h3>
               <p>
                 Evaluate applications and games as interactive systems, checking how
@@ -372,7 +417,7 @@
           <article data-reveal>
             <span class="skill-index">C</span>
             <h3>Tools</h3>
-            <ul><li>Godot 4</li><li>Git &amp; GitHub Actions</li><li>Docker</li><li>Playwright</li><li>pytest &amp; Python unittest</li><li>Python packaging &amp; CLI tooling</li></ul>
+            <ul><li>Godot 4</li><li>Chrome Extension APIs &amp; WXT</li><li>Git &amp; GitHub Actions</li><li>Docker</li><li>Playwright &amp; Vitest</li><li>pytest &amp; Python unittest</li><li>Python packaging &amp; CLI tooling</li></ul>
           </article>
         </div>
       </section>
@@ -388,8 +433,8 @@
           <h2>I take ownership<br />of the implementation.</h2>
           <p>
             I’m a software engineer focused on building useful applications and understanding
-            the systems behind them. My project work spans real-time simulation, scientific data
-            processing, document retrieval, automation, and frontend development.
+            the systems behind them. My project work spans browser products, real-time simulation,
+            scientific data processing, document retrieval, automation, and frontend development.
           </p>
           <p>
             I work through the full development process: breaking down requirements, implementing

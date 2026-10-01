@@ -384,6 +384,24 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5.4rem); line-height: 1.0
 .flybrain-copy .project-lede { color: #cbbbbb; font-size: 1.05rem; }
 .science-boundary { margin-top: 22px; padding: 16px 18px; border-left: 2px solid var(--red); background: rgba(227,38,54,.055); font-size: .875rem; }
 
+.sitemed-card { grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); border-color: var(--line-red); background: linear-gradient(145deg, rgba(227,38,54,.045), transparent 45%), var(--panel); }
+.sitemed-showcase { min-width: 0; padding: clamp(20px, 3vw, 34px); border-right: 1px solid var(--line); background: radial-gradient(circle at 82% 12%, rgba(62,111,237,.16), transparent 36%), radial-gradient(circle at 18% 88%, rgba(227,38,54,.13), transparent 43%), #080405; }
+.sitemed-preview { margin: 0; border: 1px solid var(--line-red); background: #081326; box-shadow: 0 26px 70px rgba(0,0,0,.52); }
+.sitemed-preview img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; }
+.sitemed-preview figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 13px 15px; border-top: 1px solid var(--line); color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; line-height: 1.5; }
+.sitemed-preview figcaption span:first-child { color: var(--red-bright); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
+.sitemed-preview figcaption span:last-child { text-align: right; }
+.sitemed-flow { display: grid; grid-template-columns: repeat(3, 1fr); padding: 0; margin: 28px 0 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); list-style: none; }
+.sitemed-flow li { min-width: 0; padding: 19px 14px; border-right: 1px solid var(--line); }
+.sitemed-flow li:first-child { padding-left: 0; }
+.sitemed-flow li:last-child { padding-right: 0; border-right: 0; }
+.sitemed-flow span, .sitemed-flow strong { display: block; }
+.sitemed-flow span { color: var(--red-bright); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+.sitemed-flow strong { margin-top: 8px; color: var(--ink); font-size: .86rem; font-weight: 600; line-height: 1.4; }
+.sitemed-copy { align-self: start; }
+.sitemed-copy h3 { font-size: clamp(2.4rem, 4vw, 3.8rem); line-height: 1; letter-spacing: -.035em; }
+.sitemed-copy .project-lede { color: #cbbbbb; font-size: 1.05rem; }
+
 .code-window { position: relative; z-index: 1; width: 80%; border: 1px solid var(--line-red); background: rgba(5,3,3,0.9); box-shadow: 0 22px 60px rgba(0,0,0,0.6); }
 .window-bar { height: 34px; padding: 0 12px; display: flex; align-items: center; gap: 5px; border-bottom: 1px solid var(--line); color: var(--dim); font-family: ui-monospace, monospace; font-size: 0.56rem; }
 .window-bar i { width: 5px; height: 5px; border-radius: 50%; background: var(--dim); }
@@ -469,6 +487,7 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5.4rem); line-height: 1.0
   .project-featured { display: block; }
   .retrieval-overview { border-right: 0; border-bottom: 1px solid var(--line); }
   .flybrain-showcase { border-right: 0; border-bottom: 1px solid var(--line); }
+  .sitemed-showcase { border-right: 0; border-bottom: 1px solid var(--line); }
   .about-section { grid-template-columns: 1fr; }
   .about-code { width: min(100%, 520px); min-height: 400px; }
 }
@@ -486,6 +505,11 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5.4rem); line-height: 1.0
   .project-visual { min-height: 260px; }
   .gameplay-video figcaption { flex-direction: column; gap: 4px; }
   .gameplay-video figcaption span:last-child { text-align: left; }
+  .sitemed-preview figcaption { flex-direction: column; gap: 4px; }
+  .sitemed-preview figcaption span:last-child { text-align: left; }
+  .sitemed-flow { grid-template-columns: 1fr; }
+  .sitemed-flow li, .sitemed-flow li:first-child, .sitemed-flow li:last-child { padding: 16px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .sitemed-flow li:last-child { border-bottom: 0; }
   .flybrain-facts { grid-template-columns: 1fr; }
   .flybrain-facts div, .flybrain-facts div:first-child, .flybrain-facts div:last-child { padding: 18px 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .flybrain-facts div:last-child { border-bottom: 0; }
