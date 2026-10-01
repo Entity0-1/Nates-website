@@ -365,9 +365,9 @@ h2 { margin-bottom: 0; font-size: clamp(2.5rem, 5.4vw, 5.4rem); line-height: 1.0
 .engineering-note p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.8; }
 .project-links { display: flex; flex-wrap: wrap; column-gap: 24px; }
 
-.flybrain-card { grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); border-color: var(--line-red); background: linear-gradient(140deg, rgba(227,38,54,.06), transparent 42%), var(--panel); }
+.flybrain-card { grid-template-columns: minmax(380px, .82fr) minmax(0, 1.18fr); border-color: var(--line-red); background: linear-gradient(140deg, rgba(227,38,54,.06), transparent 42%), var(--panel); }
 .flybrain-showcase { min-width: 0; padding: clamp(20px, 3vw, 34px); border-right: 1px solid var(--line); background: radial-gradient(circle at 22% 18%, rgba(227,38,54,.16), transparent 45%), #080405; }
-.gameplay-video { margin: 0; border: 1px solid var(--line-red); background: #020202; box-shadow: 0 26px 70px rgba(0,0,0,.55); }
+.gameplay-video { width: 100%; max-width: 520px; margin: 0 auto; border: 1px solid var(--line-red); background: #020202; box-shadow: 0 26px 70px rgba(0,0,0,.55); }
 .gameplay-video video { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #000; }
 .gameplay-video figcaption { display: flex; justify-content: space-between; gap: 20px; padding: 13px 15px; border-top: 1px solid var(--line); color: var(--muted); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .75rem; line-height: 1.5; }
 .gameplay-video figcaption span:first-child { color: var(--red-bright); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
